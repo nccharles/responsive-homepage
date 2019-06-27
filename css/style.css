@@ -1,0 +1,293 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+  }
+  body{
+      margin: 0;
+      width: 100%;
+      padding: 0;
+  }
+ 
+  .head{
+    margin: 30px auto;
+    padding: 15px;
+    background-color: #F3F4F6;
+    height: 200px;
+    width: 100%;
+  }
+  .head a{
+      text-decoration: none;
+      font-size: 30px;
+      font-weight: 700;
+  }
+  .head-container{
+    width: 100%;
+    height: auto;
+    background-color: #F3F4F6;
+    margin-top: -30px;
+    padding: 0px;
+  }
+  nav ul{
+    position: relative;
+    left: 300px;
+  }
+  nav ul li{
+    display: inline;
+    margin: 10px;
+    font-weight: 600;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+  
+  }
+  nav ul li a:hover{
+    border-bottom: 2px solid #8E643E;
+  }
+
+label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+  
+  }
+  #toggle{
+    display: none;
+  }
+  
+  .head h1{
+    font-weight: normal;
+    font-size: 34px;
+    margin: 150px 0px 0px 0px;
+    text-align: center;
+  }
+  .head h3{
+    margin: 13px 0px 0px 0px;
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: center;
+  }
+  .main-body{
+    margin: 150px auto;
+    padding: 15px;
+    background-color: #fff;
+    height: 800px;
+  }
+  
+  #pizza, #biscuit, #cupcake, #green-seck{
+    height: 200px;
+    width: 200px;
+    background-color: #ED4956;
+    display: inline-block;
+    margin: 600px 15px 0px 0px;
+    position: relative;
+    z-index: 80;
+  }
+  
+  footer{
+    height: 300px;
+    padding: 15px;
+    margin: 30px auto;
+    background-color: #eeb854;
+  }
+  
+  @media screen and (min-width: 0){
+    .main-body{width: 500px;}
+  }
+  
+  @media only screen and (max-width:700px){
+    label{
+      display: block;
+      cursor: pointer;
+    }
+  
+    nav ul li{
+      width: 100%;
+    }
+    .menu{
+      display: none;
+    }
+  
+    nav ul li a{
+      display: block;
+      border-bottom: 1px solid #eaeaeb;
+  
+    }
+    #toggle:checked + .menu{
+      display: block;
+    }
+  }
+  @media screen and (min-width: 300px){
+    .main-body, footer, .head{
+      width: 200px;
+    }
+    #pizza, #biscuit, #cupcake, #green-seck{
+      margin-top: 10px;
+      top: 180px;
+      left: 0px;
+  
+    }
+  
+    .main-body{
+      position: relative;
+      top: 700px;
+    }
+    .head h1,h3{
+      text-align: center;
+    }
+    nav ul{
+      position: relative;
+      left: 0px;
+  
+    }
+    nav ul li{
+      display: block;
+      margin: 10px;
+      font-weight: 600;
+      text-align: center;
+      position: relative;
+      top: 30px;
+  
+    }
+    footer{
+      display: block;
+      height: 800px;
+    }
+    footer p{
+      font-size: 25px;
+    }
+    }
+  
+  @media screen and (min-width: 500px){
+    .main-body, footer, .head{width: 400px; }
+    #pizza, #biscuit, #cupcake, #green-seck{
+      margin-top: 10px;
+      top: 180px;
+      left: 100px;
+    }
+  
+    footer{
+      display: block;
+      height: 800px;
+  
+    }
+    footer p{
+      font-size: 25px;
+    }
+    .main-body{
+      position: relative;
+      top: 580px;
+      text-align: center;
+  
+    }
+    .head h1,h3{
+      text-align: center;
+    }
+    nav ul{
+      position: relative;
+      left: 0px;
+  
+    }
+    nav ul li{
+      display: block;
+      margin: 10px;
+      font-weight: 600;
+      text-align: center;
+      position: relative;
+      top: 30px;
+  
+    }
+  }
+  @media screen and (min-width: 700px){
+    .main-body, footer, .head{width: 600px;}
+    #pizza, #biscuit, #cupcake, #green-seck{
+      margin-top: 10px;
+      top: 180px;
+    }
+  
+    .main-body{
+      position: relative;
+      top: 100px;
+      text-align: center;
+    }
+  
+    nav ul{
+      position: relative;
+      left: 140px;
+    }
+  
+    nav ul li{
+      display: inline;
+      margin: 10px;
+      font-weight: 600;
+    }
+    footer{
+      display: block;
+      height: 300px;
+    }
+  }
+  @media screen and (min-width: 1000px){
+    .main-body, footer, .head{
+      width: 900px;
+    }
+    #pizza, #biscuit, #cupcake, #green-seck{
+      margin-top: 10px;
+      top: 180px;
+      left: 20px;
+    }
+    .container{
+      margin: 0;
+      height: auto;
+      width: 100%;
+    }
+    .main-body{
+      position: relative;
+      top: 100px;
+  
+    }
+    nav ul{
+      position: relative;
+      left: 300px;
+    }
+    nav ul li{
+      display: inline;
+      margin: 10px;
+      font-weight: 600;
+    }
+    footer{
+      display: block;
+      height: 400px;
+    }
+  }
+  @media screen and (min-width: 1400px){
+    .main-body,
+     footer,
+     .head{
+      width: 1300px;}
+    #pizza, #biscuit, #cupcake, #green-seck{
+      margin-top: 10px;
+      top: 180px;
+      left: 20px;
+    }
+    nav ul{
+      position: relative;
+      left: 300px;
+    }
+    nav ul li{
+      display: inline;
+      margin: 10px;
+      font-weight: 600;
+    }
+    footer{
+      display: block;
+      height: 700px;
+      width: 1300px;
+  
+    }
+  }
+  
